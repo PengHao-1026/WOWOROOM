@@ -1,4 +1,4 @@
-import"./all-25b8e26f.js";const s="peng";let u=document.querySelector(".productWrap");document.querySelector(".cartList");let p=[],c=[];const l=Swal.mixin({toast:!0,position:"top-end",showConfirmButton:!1,timer:3e3,width:280});function m(){axios.get(`https://livejs-api.hexschool.io/api/livejs/v1/customer/${s}/products`).then(function(i){p=i.data.products,f()})}m();function f(){let i="";p.forEach(function(t,r){i+=`
+import"./modulepreload-polyfill-3cfb730f.js";const s="peng";let u=document.querySelector(".productWrap");document.querySelector(".cartList");let p=[],c=[];const l=Swal.mixin({toast:!0,position:"top-end",showConfirmButton:!1,timer:3e3,width:280});function m(){axios.get(`https://livejs-api.hexschool.io/api/livejs/v1/customer/${s}/products`).then(function(i){p=i.data.products,f()})}m();function f(){let i="";p.forEach(function(t,r){i+=`
             <li class="productCard">
                 <h4 class="productType">新品</h4>
                 <img src="${t.images}" alt="產品圖片">
